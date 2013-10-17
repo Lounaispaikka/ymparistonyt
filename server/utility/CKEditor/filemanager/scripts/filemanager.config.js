@@ -26,7 +26,7 @@ var am = document.location.pathname.substring(1, document.location.pathname.last
 // Set this to the directory you wish to manage.
 //var fileRoot = '/' + am + 'cms/';
 
-var fileRoot = '/cms/';
+var fileRoot = '../../data/cms/'; //ymparisto/data/cms //original: /cms
 
 //Path to the manage directory on the HTTP server
 var relPath = window.location.protocol + '//' + document.domain;

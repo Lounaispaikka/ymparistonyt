@@ -9,9 +9,9 @@ define('PATH_CHARTS', PATH_DATA.'charts/');
 define('PATH_SCRIPTS', realpath(PATH_SERVER.'../scripts/').'/');
 
 if ( strpos('development', PATH_SERVER) != false ) {
-	define('PATH_CACHE', '/cache/aluetietopalvelu/production/');
+	define('PATH_CACHE', '/cache/ymparisto/production/');
 } else {
-	define('PATH_CACHE', '/cache/aluetietopalvelu/development/');
+	define('PATH_CACHE', '/cache/ymparisto/development/');
 }
 
 //Lougis server settings
