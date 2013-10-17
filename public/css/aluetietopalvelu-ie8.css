@@ -1,0 +1,11 @@
+#site #middle, #topNav ul li a {
+	position: relative;
+	behavior: url('/js/css3pie/PIE.htc');
+}
+#site #middle ul li a {
+	display: inline-block;
+}
+#site #middle ul li a p {
+	margin: 0;
+	padding: 0;
+}

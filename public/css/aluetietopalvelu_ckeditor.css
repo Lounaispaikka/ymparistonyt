@@ -1,0 +1,375 @@
+/**
+ * Aluetietopalvelu Lounaispaikka styles
+ * @author Pyry Liukas <pyry at lounaispaikka . fi>
+ */
+@import url(http://fonts.googleapis.com/css?family=Maven+Pro:400,700);
+ 
+body {
+    color: #444;
+    font-family: "Maven Pro",Geneva,Arial,Helvetica,sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background: #ebebeb; */
+    /* background: white url("/img/kartta1.png") no-repeat fixed 800px -200px; */
+    /* background: #dbfddb url("/img/kartta2.png") no-repeat fixed 800px -200px; */
+    /* background: #c8e6fb url("/img/kartta3.png") no-repeat fixed 800px -200px; */
+    /* background: white url("/img/kartta4.png") no-repeat fixed 800px -200px; */
+    background: #e8e8e8 url("/img/kartta6.png") no-repeat fixed 120% top;
+    text-align: center;
+}
+img {
+	border: 0;
+}
+/*
+h1, h2, h3, h4 {
+	margin: 5px 0 10px 0;
+	line-height: 1.4em;
+}
+h2 {
+}
+*/
+span.clr {
+	display: block;
+	width: 100%;
+	height: 1px;
+	clear: both;
+}
+#middle a {
+	color: #0374B4;
+	text-decoration: none;
+}
+#middle a:hover { color: #5497b0; }
+/* #content a:visited { color: #3c6b7d; } */
+#middle h1, h2 {
+	color: #52A83D;
+	margin: 15px 0 5px 0;
+}
+#middle #content h1:first-child {
+	margin-top: 0;
+}
+#middle h1 { font-size: 24px; }
+#middle h2 { 
+	font-size: 16px;
+	line-height: 16px;
+	word-spacing: 0px;
+}
+#middle h3, #middle h4, #middle h5, #middle h6 { font-size: 14px; }
+#middle p {
+	margin: 5px 0 5px 0;
+	font-size: 13px;
+	line-height: 18px;
+}
+#middle strong, #middle bold {
+	font-weight: bold;
+}
+#middle ul, #middle ol {
+	font-size: 13px;
+	padding: 5px 10px 2px 20px;
+}
+#middle table {
+	margin: 10px 0;
+}
+#content table[border="1"] {
+	border: 1px solid #ccc;
+}
+#content table[border="2"] {
+	border: 2px solid #ccc;
+}
+#middle table th, #middle table td {
+	padding: 5px;
+}
+#content li {
+	margin: 8px 0;
+	list-style: disc;
+}
+#content li li {
+	list-style: circle;
+}
+#northBar {
+    background: url("/img/north-bg.png") repeat scroll 0 0 transparent;
+    height: 35px;
+    width: 100%;
+    text-align: center;
+}
+#northBar #logo {
+	position: absolute;
+	top: 6px;
+	right: 10px;
+	height: 24px;
+}
+#northBar #northWrap {
+	display: inline-block;
+	width: 1000px;
+	margin: 0 auto;
+}
+#northNav {
+    color: #fff;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 4px;
+    left: 0;
+    list-style-type: none;
+}
+#northNav li {
+    float: left;
+    margin: 2px 0;
+    padding: 0;
+    border-right: 1px solid white;
+}
+#northNav li:last-child {
+    border-right: 0;
+}
+#northNav li a {
+	display: block;
+	margin: 0;
+	padding: 0 10px;
+	color: white;
+	text-decoration: none;
+}
+#northNav li a:hover {
+	text-decoration: underline;
+}
+#site {
+	display: inline-block;
+	width: 920px;
+	margin: 0 auto;
+}
+#header {
+    font-family: "Maven Pro",Geneva,Arial,Helvetica,sans-serif;
+	display: block;
+	margin: 0 auto;	
+	padding: 0;
+	text-align: left;
+	padding: 0;
+	clear: both;
+}
+#title {
+	margin: 25px 0 10px 40px;
+	float: left;
+}
+#title * {
+	float: left;
+}
+#title img {
+}
+#title h1 {
+	display: block;
+	margin: 30px 0 10px 15px;
+	padding: 0;
+	font-size: 45px;
+	line-height: 0;
+	width: 500px;
+}
+#title p {
+	display: block;
+	margin: 30px 0 10px 15px;
+	padding: 0;
+	font-size: 18px;
+	line-height: 0;
+}
+#site #header.ymparisto {
+	color: white;
+	background: #62a951;
+	border: 0;
+}
+
+#site #middle {
+	margin: 0 auto;
+	width: 100%;
+	float: left;
+	padding-top: 15px;
+}
+
+#site #middle {
+	/* background: #fefefe; */
+	/* background: url('/img/tiles/sq_white_60p.png'); */
+	background: white;
+	
+	-webkit-border-bottom-left-radius: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	-moz-border-radius-bottomright: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	behavior: url('/js/css3pie/PIE.php');
+}
+
+#topNav {
+	display: block;
+	clear: both;
+	float: left;
+	width: 100%;
+	margin: 0 auto;	
+	padding: 0;
+	background: url('/img/ymparisto/dgreen-bar.png') repeat-x bottom;
+}
+#topNav ul {
+	display: block;
+	margin: 0 auto -1px 20px;
+	padding: 0;
+	float: left;
+	list-style-type: none;
+}
+#topNav ul li {
+	display: block;
+	float: left;
+	margin: 5px 5px 0 0;
+	padding: 0;
+}
+#topNav ul li a {
+	display: block;
+	padding: 15px 20px;
+	font-size: 18px;
+	color: #39752b;
+	background: url('/img/tiles/sq_white_90p.png');
+	text-decoration: none;
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	behavior: url('/js/css3pie/PIE.php');
+}	
+#topNav ul li a:hover, #topNav ul li a.active {
+	background: white;
+}	
+#topNav ul li a:first-child {
+	margin-left: 0;
+}
+
+
+#site #middle #leftCol {
+	float: left;
+	text-align: left;
+	margin: 5px 0px 20px 20px;
+	width: 150px;
+}
+#leftCol ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 15px;
+}
+#leftCol ul li {
+	margin: 8px 0;
+}
+#leftCol ul li a {
+	color: #0374B4;
+	text-decoration: none;
+}
+#leftCol ul li a:hover {
+	color: #5497b0;
+	text-decoration: underline;
+}
+#leftCol ul ul {
+	margin: 5px 0 5px 15px;
+	font-size: 14px;
+}
+#leftCol ul ul li {
+	margin: 5px 0;
+}
+#leftCol ul ul ul {
+	font-size: 11px;
+}
+
+
+#middle #content {
+	float: left;
+	text-align: left;
+	margin: 0 20px 20px 20px;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 13px;
+/*	margin: 30px 40px; */
+}
+#middle #content h1, #middle #content h2, #middle #content h3, #middle #content h4, #middle #content h5 {
+    font-family: "Maven Pro",Geneva,Arial,Helvetica,sans-serif;
+}
+
+#site #middle #rightCol {
+	float: right;
+	text-align: left;
+	width: 150px;
+	margin-right: 10px;
+	font-size: 0.8em;
+}
+#rightCol h1 {
+	font-size: 15px;
+}
+#rightCol p {
+	line-height: 15px;
+}
+#rightCol #pageNews a {
+	font-size: 13px;
+}
+
+#site #middle #content.col2 {
+	width: 610px;
+}
+#site #middle #leftCol.col2 {
+	width: 200px;
+}
+
+#site #middle #content.col3 {
+	width: 530px;
+}
+#site #middle #leftCol.col3 {
+	width: 160px;
+}
+#site #middle #rightCol.col3 {
+	width: 160px;
+}
+
+#footer {
+	float: left;
+	clear: both;
+	overflow: hidden;
+	left: 50%;
+	margin: 20px 0 0 0;
+	padding: 15px 0 10px 0;
+	width: 100%;
+	font-size: 12px;
+	text-align: center;
+	background: url('/img/tiles/sq_white_40p.png');
+}
+#footer #partners {
+	display: block;
+	position: relative;
+	float: left;
+	left: 50%;
+	list-style-type: none;
+	margin: 10px auto;
+	padding: 0 0 20px 0;
+	text-align: center;
+	height: 60px;
+}
+#partners li {
+	float: left;
+	position: relative;
+	margin: 0 10px;
+	right: 50%;
+}
+
+#breadcrumb {
+	margin: 0 20px 10px 20px;
+	font-size: 16px;
+	color: #5497b0;
+	text-align: left;
+}
+#breadcrumb a {
+	color: #369fdb;
+	text-decoration: none;
+}
+#breadcrumb a:hover {
+	color: #5497b0;
+	text-decoration: underline;
+}
+
+#preload {
+	display: none;
+	opacity: 0;
+	width: 0;
+	height: 0;
+}

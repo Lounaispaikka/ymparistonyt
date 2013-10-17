@@ -1,0 +1,35 @@
+{"tables": [
+	{
+		id: 0,
+		schema: 'Rakennusinventointi 2011',
+		name: "Kiinteistöt"
+	},{
+		id: 1,
+		schema: 'Rakennusinventointi 2011',
+		name: 'Kunnat'
+	},{
+		id: 2,
+		schema: 'Rakennusinventointi 2011',
+		name: 'Kylät'
+	},{
+		id: 3,
+		schema: 'Rakennusinventointi 2011',
+		name: 'Rakennukset'
+	},{
+		id: 4,
+		schema: 'Rakennusinventointi 2011',
+		name: 'Rakennuksen suunnittelijat/rakentajat'
+	},{
+		id: 5,
+		schema: 'Rakennusinventointi 2011',
+		name: 'Suunnittelijat/rakentajat'
+	},{
+		id: 6,
+		schema: "Puutarhainventointi"
+		name: 'Puutarhat'
+	},{
+		id: 7,
+		schema: "Puutarhainventointi"
+		name: 'Kivet'
+	}
+]}

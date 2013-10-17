@@ -1,0 +1,588 @@
+/**
+ * Aluetietopalvelu Lounaispaikka styles
+ * @author Pyry Liukas <pyry at lounaispaikka . fi>
+ */
+/*@import url(http://fonts.googleapis.com/css?family=Maven+Pro:400,700);*/
+
+ 
+body, .x-body {
+    color: #444;
+    font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+ 
+}
+/*img {
+	border: 0;      
+}*/
+/*
+h1, h2, h3, h4 {
+	margin: 5px 0 10px 0;
+	line-height: 1.4em;
+}
+h2 {
+}
+*/
+em {
+    font-style: italic;
+}
+hr.clr {
+	width: 100%;
+	clear: both;
+	border: 0;
+	border-bottom: 1px solid #51a83c;
+}
+span.clr {
+	display: block;
+	width: 100%;
+	height: 1px;
+	clear: both;
+}
+
+#middle a {
+	color: #0374B4;
+	text-decoration: none;
+}
+#middle a:hover { color: #5497b0; }
+/* #content a:visited { color: #3c6b7d; } */
+#middle h1, h2, h3, h4, h5, h6, p {
+        /*padding: 10px 0 0 15px;*/
+        padding: 10px 0 0 15px;
+}
+#middle h1, h2 {
+	/*color: #efaf0d;*/
+	margin: 15px 0 10px 0;
+}
+#middle #content h1:first-child {
+	margin-top: 10px;
+}
+#middle h1 { 
+        font-size: 20px; 
+        font-weight: normal; 
+        /*padding: 10px 0 0 15px;*/
+}
+#middle h2 { 
+	
+        font-size: 16px;
+	line-height: 16px;
+	word-spacing: 0px;
+}
+#middle h3, #middle h4, #middle h6 { font-size: 14px; font-weight: bold; }
+#middle h4 {
+        font-weight: bold;		
+}
+#middle h5 {
+	font-size: 14px;
+	color:  rgb(129,130,134);
+}
+#middle p {
+	margin: 5px 0 10px 0px;
+	font-size: 13px;
+	line-height: 15px;
+}
+#middle strong, #middle bold {
+	font-weight: bold;
+}
+#middle ul, #middle ol {
+	font-size: 13px;
+	padding: 5px 10px 2px 30px;
+        list-style-position: inside;
+}
+#middle table {
+	margin: 10px 0 0 15px;
+}
+#content table[border="1"] {
+	border: 1px solid #ccc;
+}
+#content table[border="2"] {
+	border: 2px solid #ccc;
+}
+#middle table th, #middle table td {
+	padding: 5px;
+}
+#middle .x-btn table {
+	margin: 0;
+	padding: 0;
+}
+#middle .x-btn table td {
+	padding: 0;
+}
+#middle img {
+        -moz-border-radius:3px;
+        -webkit-border-radius:3px;
+        border-radius: 3px;
+}
+#content li {
+	margin: 8px 0;
+	list-style: disc;
+}
+#content li li {
+	list-style: circle;
+}
+#northBar {
+    /* background: url("/img/north-bg.png") repeat scroll 0 0 transparent; */
+    height: 35px;
+    width: 100%;
+    text-align: center;
+}
+#northBar #logo {
+	position: absolute;
+	top: 6px;
+	right: 10px;
+	height: 24px;
+}
+#northBar #northWrap {
+	display: inline-block;
+	width: 960px;
+	margin: 10px auto;
+}
+#northNav {
+    color: #fff;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    /* top: 4px; */
+	top: 1px;
+    left: 0;
+    list-style-type: none;
+}
+#northNav li {
+    float: left;
+    margin: 2px 2px 0 0;
+    padding: 0;
+    border-right: 1px solid white;
+	
+}
+ #northNav li:last-child {
+    border-right: 0;
+} 
+#northNav li a {
+	display: block;
+	margin: 0;
+	padding: 0 10px;
+	color: #fff;
+	text-decoration: none;
+}
+#northNav li a:hover {
+	text-decoration: underline;
+}
+#beta {
+	width: 100%;
+	background: #3e78ff;
+	color: white;
+	text-align: center;
+	padding: 15px 0;
+    font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+#site {
+	display: inline-block;	
+        width: 962px;
+	margin: 0 auto;      
+}
+#header {
+    font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+	font-weight: bold; 
+	display: block;
+	margin: 0 auto;	
+	padding: 0;
+	text-align: left;
+	padding: 0;
+	clear: both;
+        width:100%;
+}
+#title {
+	margin: 25px 0 10px 0px;
+	float: left;
+        padding-left:40px;
+	/*width: 65.4%;*/
+	font-family: Maven Pro,Verdana,Geneva,Arial,Helvetica,sans-serif;
+        
+}
+#title * {
+	float: left;
+}
+#title img {
+}
+#title a, #title a:visited {
+        color: #fff;
+		text-decoration: none;
+}
+#title h1 {
+	display: block;
+	margin: 30px 0 10px 15px;
+	padding: 0;
+	font-size: 45px;
+	line-height: 0;
+}
+#title p {
+	display: block;   
+	margin: 30px 0 10px 15px;
+	padding: 0;
+	font-size: 18px;
+	line-height: 0;
+}
+
+#title_container{
+/*	width: 100%;*/
+/*	padding: 0px 0px 0px 40px;*/
+        height: 135px; 
+        background: url("/img/ymparisto/yn_aurinko_reuna_1000px_ylapalkkiin2.png") no-repeat left;
+        background-color: #8FBB42;
+      
+}
+#title_left{
+        width: 62.4%;
+        height: 135px;
+        float: left;      
+}
+#title_pic{
+	width: 322px;
+        float: right;
+	background-color: #fff;
+        border-left: #fff solid 2px;
+}
+
+#title_pic img{
+	width: 100%;
+	height: 135px;
+/*    background: -moz-linear-gradient(top, #55aaee, #003366);*/
+}
+
+
+#site #header.ymparisto {
+	color: white;
+	background: #fff;
+	border: 0;
+}
+
+#site #middle {
+	margin: 0 auto;
+	width: 100%;
+	float: left;
+	padding: 2px;
+}
+
+#site #middle {
+	background: white;
+}
+
+#topNav {
+	display: block;
+	clear: both;
+	float: left;
+	width: 100%;
+	height: 40px; /*48px;*/
+	margin: 0 auto;	
+	padding: 0;
+	/*background: url('/img/ymparisto/dgreen-bar.png') repeat-x bottom;*/
+	overflow: hidden;
+}
+#topNav ul {
+	display: block;
+	margin: 0 2px -1px 2px;
+	padding: 0;
+	width: 100%;
+	float: left;
+	list-style-type: none;
+}
+#topNav ul li {
+	display: block;
+	float: left;
+	margin: 1px 1px 0 1px;
+	padding: 0;
+/*	width: 16.42%;*/
+        width: 158px;
+}
+#topNav ul li a {
+	display: block;
+	padding: 10px 0px;
+	font-size:13px;
+        letter-spacing: 0.07em;
+        color: #fff;
+	text-align: center;
+	text-decoration: none;
+}	
+#topNav ul li a:hover {
+	/*sivustokohtainen*/
+}
+
+#topNav ul li a.active {
+	/*sivustokohtainen*/
+}	
+#topNav ul li:first-child {
+	margin-left: 0;
+}
+#topNav ul li:last-child {
+	margin-right: 0;
+}
+
+
+#site #middle #leftCol {
+	display:block;
+        float: left;
+	text-align: left;
+	margin: 5px 0px 20px 0; /* viim. oli 20px*/
+	width: 150px;
+}
+#leftCol ul {
+	display:block;
+        margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 12px;
+        margin-top: 20px;
+}
+#leftCol ul li {
+	display:block;
+        margin: 8px 0;
+}
+#leftCol ul li a {
+	display:block;
+/*        color: #0374B4;*/
+        color: #818286;
+        font-weight: 700;
+	text-decoration: none;
+/*        -webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;*/
+        padding: 2px 0 5px 5px;
+      
+}
+#leftCol ul li a:hover {
+	display:block;
+        color: rgb(143, 187, 66);
+	text-decoration: none;
+}
+#leftCol ul li a.active {
+	display:block;
+        color: rgb(143, 187, 66);
+	text-decoration: none;
+}
+#leftCol ul ul {
+	display:block;
+        margin: 5px 0 5px 15px;
+	font-size: 11px;
+	
+}
+#leftCol ul ul li {
+	display:block;
+        margin: 5px 0;
+	
+}
+#leftCol ul ul ul {
+	display:block;
+        font-size: 11px;
+	
+}
+
+#middle #content {
+	float: left;
+	text-align: left;
+	//margin: 0 20px 20px 20px;
+	//font-family: Verdana, Arial,Helvetica,sans-serif;
+	font-family: Verdana, sans-serif;
+	font-size: 13px;
+	width: 100%;
+        
+/*	margin: 30px 40px; */
+}
+#middle #content h1, #middle #content h2, #middle #content h3, #middle #content h4, #middle #content h5 {
+    font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+}
+
+#site #middle #rightCol {
+	float: right;
+	text-align: left;
+	width: 200px;
+	margin-right: 10px;
+	font-size: 0.8em;
+     
+}
+#rightCol h1 {
+	font-size: 15px;
+}
+#rightCol p {
+	line-height: 15px;
+        padding-right: 10px;
+}
+#rightCol a {
+	line-height: 15px;
+        padding-right: 20px;
+}
+#rightCol #pageNews a {
+	font-size: 13px;
+}
+#rightCol #recentPubCharts a, #rightCol #recentComments a {
+	font-size: 13px;
+}
+
+#site #middle #content.col2 {
+/*	width: 610px; */
+	/*width: 655px;*/
+       width:720px;
+      
+}
+#site #middle #leftCol.col2 {
+	width: 180px;
+        
+}
+#site #middle #rightCol.col4 {
+	width: 160px;
+        margin: 0;
+        
+}
+#site #middle #content.col4 {
+/*	width: 610px; */
+	/*width: 655px;*/
+       width:730px;
+      
+}
+
+#site #middle #content.col3 {
+/*	width: 53%;*/
+        width: 520px;
+	padding: 0 0 0 10px;
+}
+#site #middle #leftCol.col3 {
+	width: 200px;
+}
+#site #middle #rightCol.col3  {
+	width: 200px;
+        margin: 0;
+	/*-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding: 0 5px 5px 10px;*/
+}
+
+#footer {
+	float: left;
+	clear: both;
+	overflow: hidden;
+	left: 50%;
+	margin: 20px 0 0 0;
+	padding: 15px 0 10px 0;
+	width: 100%;
+	font-size: 12px;
+	text-align: center;
+	background: url('/img/tiles/sq_white_40p.png');
+}
+#footer #partners {
+	display: block;
+	position: relative;
+	float: left;
+	left: 50%;
+	list-style-type: none;
+	margin: 10px auto;
+	padding: 0 0 20px 0;
+	text-align: center;
+	height: 60px;
+}
+#partners li {
+	float: left;
+	position: relative;
+	margin: 0 10px;
+	right: 50%;
+}
+
+#breadcrumb {
+	position: relative;
+	margin: 0px 2px 10px 20px;
+	font-size: 12px;
+/*	color: #31a6b7;*/
+    color: rgb(143, 187, 66);
+	text-align: left;
+    clear:left;
+}
+#breadcrumb a {
+	text-decoration: none;
+	font-size: 11px;
+}
+#breadcrumb a:hover {
+	text-decoration: underline;
+}
+
+#preload {
+	display: none;
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+
+/** ExtJS styles **/
+
+.lgBigButton .x-btn-inner {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.close-image {
+        display: block;
+        float:right;
+        position:relative;
+        top:-10px;
+        right: -10px;
+        height: 20px;
+        background:url('/img/close.png');
+}
+.image-title {
+        
+}
+body .bigImage, .x-body .bigImage {
+        background-color: black;
+}
+
+#cse_input input {
+    display:block;
+    float:left;
+}
+#cse_input input.submit {
+
+    background:url('/img/icons/search-icon.png') no-repeat;
+    overflow:hidden;
+    border:none;
+    padding:0;
+    width:16px;
+    height:16px;
+    cursor:pointer;
+    text-indent:-999px;  
+/*    width:16px;
+
+    height:14x;
+
+    overflow:hidden;
+
+    text-indent:-999px;  To remove any default text on the button
+
+    line-height:15px;  required for safari 
+
+    background:url(/img/icons/search-sprite.gif) no-repeat 0 3px;  This will display the search icon by default 
+
+    cursor:pointer;  Hand cursor for the normal state 
+
+    border:none;
+
+    padding:0;*/
+
+}
+
+#cse_input input.submit:hover{
+/*
+background-position: 0 -16px;  This will display the dark search icon on hover 
+height:14x;
+}*/
+}
+ 
+
+#cse_input input.submit:active{
+
+/*background-position: 0 -30px;  And finally, this is the one that shows the loader 
+height:14x;
+cursor:wait;  Shows the wait cursor on click */
+
+}

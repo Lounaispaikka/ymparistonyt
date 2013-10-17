@@ -1,0 +1,24 @@
+Ymparisto_arviointi_kierros   : 3       : got keys as a:1:{i:0;s:2:"id";}
+Ymparisto_arviointi_kierros   : QUERY       : UPDATE  ymparisto.arviointi_kierros  SET created_date = '2012-06-04 17:16:47+03' , reminder1_date = '2012-06-11 00:00:00+03' , reminder2_date = '2012-06-18 00:00:00+03' , closing_date = '2012-06-25 00:00:00+03' , closed = '0' , published = '0' , title1 = 'Arviointikierros - TESTI' , title2 = 'Toimenpiteen etenemisen arviointi' , title3 = 'Arvio toimenpiteen toteutumisesta vuoden 2013 loppuun mennessä' , content1 = '<p>
+	Arvioi toimenpidett&auml; oman ty&ouml;si/toimintasi vinkkelist&auml;. Anna arvio, miten toimenpide tulee toteutumaan Lounais-Suomessa vuoden 2013 loppuun menness&auml; ja kirjoita perustelu arviollesi. Perusteluissa voit antaa my&ouml;s esimerkkej&auml; ja numerotietoa.</p>
+' , email_tpl = '<p>
+	Hei,</p>
+<p>
+	Olet yst&auml;v&auml;llisesti lupautunut asiantuntijaksi ymp&auml;rist&ouml;ohjelman seurantaan.</p>
+<p>
+	Vuoden 2012 seurantakierros Ymp&auml;rist&ouml; Nyt &ndash;palvelussa on k&auml;ynnistynyt. Ole hyv&auml; ja arvioi toimenpiteen &quot;<strong>[TOIMENPITEEN_NIMI]</strong>&quot; etenemist&auml; [ARVIOINTI_SULKEUTUU_PVM] menness&auml;.</p>
+<p>
+	Sait aiemmin s&auml;hk&ouml;postiisi viestin otsikolla: &rdquo;Ohje ymp&auml;rist&ouml;ohjelman arviointiin&rdquo;, josta l&ouml;yd&auml;t tarkemmat tiedot liittyen arviointiteht&auml;v&auml;&auml;n.</p>
+<p>
+	Siirry arviointilomakkeeseen t&auml;st&auml; linkist&auml;: [LINKKI_ARVIOINTIKYSELYYN]</p>
+<p>
+	Jos t&auml;m&auml; viesti p&auml;&auml;tyi suoraan roskapostiin tai sinulla on muita teknisi&auml; ongelmia, ota yhteytt&auml;: <a href="mailto:ymparisto@lounaispaikka.fi">ymparisto@lounaispaikka.fi</a></p>
+<p>
+	<em><strong>Yhdess&auml; parempaan ymp&auml;rist&ouml;&ouml;n!</strong></em></p>
+<p>
+	Koordinaatioryhm&auml;</p>
+' , started_date = '2012-06-05T15:16:54+03:00' , in_process = '0' , notes = 'Kierroksen arviointikyselyt lahetetty asiantuntijoille 05.06.2012 15:16:54'   WHERE (  ymparisto.arviointi_kierros.id = 2 )  
+Ymparisto_arviointi_kierros   : query       : QUERY DONE IN  0.00352311134338 seconds
+Ymparisto_arviointi_kierros   : 1       : Clearing Cache for ymparisto_arviointi_kierros
+Ymparisto_arviointi_kierros   : FETCH       : N;
+Ymparisto_arviointi_kierros   : FETCH       : Last Data Fetch'ed after 0.000123977661133 seconds
