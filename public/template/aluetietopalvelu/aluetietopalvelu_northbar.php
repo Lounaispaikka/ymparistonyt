@@ -1,9 +1,11 @@
 <div id="northBar">
 	<div id="northWrap">
 		<ul id="northNav">
+			<li><a href="http://www.lounaispaikka.fi">Aluetietopalvelu</a></li>
 			<li><a href="http://paikkatietokeskus.lounaispaikka.fi">Lounaispaikka</a></li>
 			<li><a href="http://ymparisto.lounaispaikka.fi" style="font-weight:bold;">Ymp&auml;rist&ouml; Nyt</a></li>
-			<li><a href="http://www.lounaispaikka.fi">Kartat</a></li>
+			<li><a href="http://hankeverkko.lounaispaikka.fi">Hankeverkko</a></li>
+			<li><a href="http://kartta.lounaispaikka.fi">Kartat</a></li>
                         
 		</ul>
             <div id="hakukentta" style="float:right;vertical-align:baseline;" ><form id="cse_input" action="http://ymparisto.lounaispaikka.fi/fi/haku/" >
