@@ -1,0 +1,11 @@
+
+div#arvioinnit {
+	width: 500px;
+}
+#tavoitteet, div#arvioinnit, #social #email a {
+	position: relative;
+	behavior: url('/js/css3pie/PIE.htc');
+}
+img.big-hover-image {
+	behavior: url('/js/css3pie/PIE.htc');
+}

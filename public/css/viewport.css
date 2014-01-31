@@ -1,0 +1,220 @@
+html {
+  height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font: 13px/1.231 "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  min-width: 980px;
+  color: #484848;
+  background: #f8f8f8;
+  min-height: 100%;
+}
+a {
+  color: #083772;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0464bb;
+}
+
+#intro {
+	padding: 20%;
+	text-align: center;
+	font-size: 18px;
+}
+
+#header-content {
+/*
+  background: url(/img/mip.png) 0 0 no-repeat;
+  padding-left: 21px;
+*/
+  color: #fff;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  line-height: 20px;
+  margin: 7px 0 0 8px;
+  font-size: 1.1em;
+}
+
+#header-content strong {
+  font-weight: bold;
+  padding-right: 3px;
+}
+
+#north-region {
+  background-color: #1b5f8a;
+}
+
+#navigation {
+    background-color: #144767;
+    border-radius: 0 0 0 15px;
+}
+
+#navigation .x-toolbar {
+    background-color: transparent;
+    background-image: none;
+    border: none;
+    padding-top: 3px;
+    margin-left: 4px;
+}
+
+#navigation .x-toolbar .x-btn {
+    padding: 5px;
+}
+
+#navigation .x-toolbar .x-btn:hover {
+    opacity: 1;
+}
+
+#navigation .x-toolbar .x-btn-inner {
+    color: white;
+}
+
+#navigation .x-toolbar .x-btn-inner:hover {
+    color: black;
+}
+
+#navigation .x-toolbar .x-btn-default-toolbar-small-over {
+    background-color: #3a759a;
+    background-image: none;
+}
+
+#navigation .x-toolbar-default {
+    background-image: none !important;
+}
+
+#tabs {
+    margin-left: 0px !important;
+}
+
+#tabs .x-tab-bar {
+    background-color: #1b5f8a;
+    background-image: none;
+}
+
+#tabs .x-tab-bar-body {
+    border: none !important;
+}
+
+#tabs .x-tab-default-top {
+    background-image: none;
+    border-bottom-color: transparent !important;
+    background-color: #265c7d;
+    box-shadow: none;
+}
+
+#tabs .x-tab-default-top button {
+    color: #a4c8df;
+}
+
+#tabs .x-tab-default-top-active {
+    background-image: none;
+    background-color: #fefefe;
+    border-bottom: none;
+}
+
+#tabs .x-tab-over button {
+    color: white;
+}
+
+#tabs .x-tab-default-top-active button {
+    color: black;
+}
+
+#tabs .x-tab-bar-strip-default-horizontal {
+    display: none;
+}
+
+#tabs .x-tab-bar-top {
+    height: 22px;
+}
+
+
+#tabs .x-tab-close-btn {
+    top: 4px;
+}
+
+.panel-lougis {
+    padding: 0 4px 4px 4px;
+    background-color: white;
+}
+
+.panel-mip-title {
+    font-size: 1.4em;
+    font-weight: bold;
+    border-bottom: 1px solid #144767;
+    padding: 2px 4px 1px 2px;
+    margin: 0px 2px 4px 2px;
+}
+
+.browser-tree .x-panel-body {
+    background: transparent;
+
+}
+
+.tree-tab-content {
+    border-radius: 6px 0 0 6px;
+    box-shadow: 0px 4px 8px #9a9a9a;
+}
+
+.x-border-layout-ct {
+    background-color: #fefefe;
+}
+
+.x-btn-icon-text-right button .x-btn-inner {
+    background-position: right center;
+}
+
+.x-toolbar .x-btn-split-right {
+    background-image: url(/img/icons/16x16/bullet_arrow_down.png);
+}
+
+.x-btn-default-toolbar-small-menu-active, .x-btn-default-toolbar-small-pressed {
+    background-image: none;
+    background-color: #3a759a;
+}
+
+.x-menu-body {
+    background: none;
+    background-color: #ffffff !important;
+    border-radius: 2px;
+}
+
+.x-panel-header-default {
+    background-image: none;
+    background-color: transparent;
+    border: none;
+    margin-top: 3px;
+}
+
+.x-panel-header-text {
+    font-size: 1.2em;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.x-toolbar-default {
+    background-image: none;
+    background-color: #e5e9ed;
+}
+
+.x-panel-table {
+    margin: 4px;
+}
+
+.x-panel-table .x-panel-header {
+    background-image: none;
+}
+
+.x-panel-table .x-panel-header-text {
+    font-size: 0.9em;
+}
+
+.notice {
+    margin: 6px 4px 4px 4px;
+    font-size: 0.9em;
+    font-style: italic;
+}

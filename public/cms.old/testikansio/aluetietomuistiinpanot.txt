@@ -1,0 +1,17 @@
+- Domain
+- Työkalut
+- Leiska
+
+- 
+- SADe
+
+- Lounais-Suomen Ympäristö 
+
+- Ennakointi
+
+- Pyry lähettää päätössähköpostin:
+	* Lounais-Suomen ympäristön tila iskulause (esim: Ympäristön tilanne)
+	* Domain: (lounaispaikka.fi)
+	* Osoite: lounaispaikka.fi/ymparisto
+	
+- Kättä pidempi manuaali sisällönsyötöstä.

@@ -1,0 +1,289 @@
+/**
+ * Aluetietopalvelu Lounaispaikka styles
+ * @author Pyry Liukas <pyry at lounaispaikka . fi>
+ */
+body {
+    color: #444444;
+    font-family: "Lucida Grande","Trebuchet MS",Verdana,Geneva,Arial,Helvetica,sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #ebebeb;
+}
+img {
+	border: 0;
+}
+.siteDim {
+	width: 1024px;
+}
+h1, h2, h3, h4 {
+
+}
+h1 { font-size: 24px; }
+h2 { font-size: 20px; }
+h3 { font-size: 16px; }
+h4, h5, h6 { font-size: 14px; }
+p {
+	font-size: 13px;
+}
+#lgNorth {
+    background: url("/img/north-bg.png") repeat scroll 0 0 transparent;
+    height: 35px;
+    width: 100%;
+    text-align: center;
+}
+#lgNorth #logo {
+	position: absolute;
+	top: 6px;
+	right: 10px;
+	height: 24px;
+}
+#lgNorth #northWrap {
+	margin: 0 auto;
+}
+#atpNav {
+    color: #fff;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 4px;
+    left: 0;
+    list-style-type: none;
+}
+#atpNav li {
+    float: left;
+    margin: 2px 0;
+    padding: 0;
+    border-right: 1px solid white;
+}
+#atpNav li:last-child {
+    border-right: 0;
+}
+#atpNav li a {
+	display: block;
+	margin: 0;
+	padding: 0 10px;
+	color: white;
+	text-decoration: none;
+}
+#atpNav li a:hover {
+	text-decoration: underline;
+}
+#site {
+	margin: 0 auto;
+}
+#site #head {
+	display: block;
+	margin: 10px auto;	
+	text-align: center;
+	padding: 60px 20px;
+	font-size: 24px;
+	-webkit-border-top-left-radius: 20px;
+	-webkit-border-top-right-radius: 20px;
+	-moz-border-radius-topleft: 20px;
+	-moz-border-radius-topright: 20px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+#site #middle {
+	margin: 10px auto;
+	width: 100%;
+	-webkit-border-bottom-right-radius: 20px;
+	-webkit-border-bottom-left-radius: 20px;
+	-moz-border-radius-bottomright: 20px;
+	-moz-border-radius-bottomleft: 20px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+.siteCorners {
+	border: 1px solid #fefefe;
+	background: #fefefe;
+}
+#site #middle #topNav {
+	width: 100%;
+	margin: 10px 0 10px 0;	
+	float: left;
+	/*
+	border-bottom: 1px solid #ccc;
+	-webkit-border-bottom-right-radius: 20px;
+	-webkit-border-bottom-left-radius: 20px;
+	-moz-border-radius-bottomright: 20px;
+	-moz-border-radius-bottomleft: 20px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	*/
+}
+#topNav ul {
+	display: block;
+	margin: 0 0 0 40px;
+	padding: 0;
+	list-style-type: none;
+}
+#topNav ul li {
+	display: block;
+	float: left;
+	margin: 5px 5px;
+	padding: 0;
+}
+#topNav ul li a {
+	display: block;
+	padding: 10px 20px;
+	color: #006400;
+	background: #ADFF2F;
+	text-decoration: none;
+	-webkit-border-top-left-radius: 20px;
+	-webkit-border-bottom-right-radius: 20px;
+	-moz-border-radius-topleft: 20px;
+	-moz-border-radius-bottomright: 20px;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}	
+
+#topNav ul li a:hover {
+	color: #ADFF2F;
+	background: #006400;
+}	
+#topNav ul li a:first-child {
+	margin-left: 0;
+}
+#site #middle #leftNav {
+	float: left;
+	margin: 5px 0px 20px 20px;
+	width: 180px;
+}
+#leftNav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 14px;
+}
+#leftNav ul li {
+	margin: 5px 0;
+}
+#leftNav ul li a {
+	color: #006400;
+	text-decoration: none;
+}
+#leftNav ul li a:hover {
+	text-decoration: underline;
+}
+#leftNav ul ul {
+	margin: 5px 0 5px 15px;
+	font-size: 13px;
+}
+#leftNav ul ul ul {
+	font-size: 11px;
+}
+#site #middle #content {
+	float: left;
+	margin: 0 20px 20px 20px;
+	width: 782px;
+/*	margin: 30px 40px; */
+}
+#content #atpSites {
+	list-style-type: none;
+	margin: 40px 0 80px 0;
+	padding: 0;
+}
+#atpSites li {
+	display: block;
+	margin: 20px auto;
+}
+#atpSites li a {
+	text-align: center;
+	display: block;
+	margin: 0;
+	padding: 50px 20px;
+	font-size: 24px;
+	text-decoration: none;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+#atpSites li a:hover {
+	text-decoration: none;
+}
+#atpSites #ymparisto {
+	color: #006400;
+	background: #ADFF2F;
+}
+#atpSites #ymparisto:hover {
+	color: #ADFF2F;
+	background: #006400;
+}
+#site #head.ymparisto {
+	color: #006400;
+	background: #ADFF2F;
+	border: 0;
+}
+#atpSites #lounaispaikka {
+	color: #E0FFFF;
+	background: #1E90FF;
+}
+#atpSites #lounaispaikka:hover {
+	color: #E0FFFF;
+	background: #0000FF;
+}
+#site #foot {
+	margin: 5px 20px 20px 20px;
+	font-size: 12px;
+	text-align: left;
+	float: left;
+}
+#foot #partners {
+	display: block;
+	list-style-type: none;
+	margin: 10px 0 20px 155px;
+	padding: 0 0 20px 0;
+}
+#partners li {
+	display: block;
+	float: left;
+	margin: 0 10px;
+}
+#partners li img {
+	height: 50px;
+}
+
+
+
+/* column container */
+.colmask {
+	position:relative;	/* This fixes the IE7 overflow hidden bug */
+	clear:both;
+	float:left;
+	width:100%;			/* width of whole page */
+	overflow:hidden;		/* This chops off any overhanging divs */
+}
+/* common column settings */
+.colright,
+.colmid,
+.colleft {
+	float:left;
+	width:100%;
+	position:relative;
+}
+.col1,
+.col2,
+.col3 {
+	float:left;
+	position:relative;
+	padding:0 0 1em 0;
+	overflow:hidden;
+}
+/* 2 Column (left menu) settings */
+.leftmenu {
+	background:#fff;		/* right column background colour */
+}
+.leftmenu .colleft {
+	right:75%;			/* right column width */
+}
+.leftmenu .col1 {
+	width:71%;			/* right column content width */
+	left:102%;			/* 100% plus left column left padding */
+}
+.leftmenu .col2 {
+	width:21%;			/* left column content width (column width minus left and right padding) */
+	left:6%;			/* (right column left and right padding) plus (left column left padding) */
+}
