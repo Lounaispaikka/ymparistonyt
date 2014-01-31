@@ -102,7 +102,7 @@ class Kysely extends \Lougis\abstracts\Utility {
 				
 				$mail->MsgHTML( $msgText );
 				$mail->AddAddress($Asa['email'], $Asa['firstname'].' '.$Asa['lastname']);
-				$mail->AddBCC('pyry@lounaispaikka.fi');
+				$mail->AddBCC('esa.halsti@lounaispaikka.fi');
 				
 				if( !$mail->Send() ) {
 					$Vas->delete();
@@ -127,7 +127,7 @@ class Kysely extends \Lougis\abstracts\Utility {
 
 		$Kysely = new \Ymparisto_arviointi_kysely( $kyselyId );
 		$Kierros = new \Ymparisto_arviointi_kierros( $Kysely->kierros_id );
-		
+		devlog($Kysely, "ymparisto");
 		$Asiantuntijat = $Kysely->getAsiantuntijatArray();
 		
 		$title = $Kysely->getKyselyTitle();
@@ -140,7 +140,6 @@ class Kysely extends \Lougis\abstracts\Utility {
 			$Vas->find(true);
 			
 			if ( empty($Vas->arvio_arvo) && empty($Vas->reminder2_date) ) {
-				
 				$url = $Vas->getVastausUrl();
 				$aurl = '<a href="'.$url.'">'.$url.'</a>';
 				$tplReplace = array(
@@ -160,8 +159,8 @@ class Kysely extends \Lougis\abstracts\Utility {
 				
 				$mail->MsgHTML( $msgText );
 				$mail->AddAddress($Asa['email'], $Asa['firstname'].' '.$Asa['lastname']);
-				$mail->AddBCC('pyry@lounaispaikka.fi');
-				
+				$mail->AddBCC('esa.halsti@lounaispaikka.fi');
+
 				if( !$mail->Send() ) {
 					throw new \Exception("Sähköpostin lähetys epäonnistui: " . $mail->ErrorInfo);
 				}

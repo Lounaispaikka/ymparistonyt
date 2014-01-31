@@ -8,8 +8,10 @@ define('ARVIO_VIESTIT_LOCKFILE', ARVIO_VIESTIT_TMP.'send_arviointi_viestit.lock'
 
 try {
 	
-	$Kierros = new \Ymparisto_arviointi_kierros(2);
-	
+	/*
+	 * This script is obviously a work in progress and should be re-written
+	 */
+	$Kierros = new \Ymparisto_arviointi_kierros(4); //Fix this!
 	//if ( lockfileExists() ) throw new \Exception("Process running");
 	//createLockfile();
 	$Kyselyt = $Kierros->getKyselyt();
