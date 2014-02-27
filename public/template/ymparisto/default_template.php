@@ -95,8 +95,6 @@ $TavoitteetPrinted = false;
 	?>
 </div>
 <? } ?>
-
-
 <div id="content" class="<?=$Class?>">
 <?
  // Tavoitteet content-divissä HUOM!!! Tulevat sisällönhallinnasta
@@ -110,7 +108,7 @@ $TavoitteetPrinted = false;
 ?>
 {PAGE_CONTENT}
 <?
-if ( $Pg->page_type == 'toimenpide' && $Kysely = \Ymparisto_arviointi_kysely::hasPublishedArviointi($Pg->id) ) {
+if ( $Pg->page_type == 'toimenpide' && $Kysely = \Ymparisto_arviointi_kysely::getPublishedArviointi($Pg->id, $_GET["kierros"]) ) {
 	$Kierros = new \Ymparisto_arviointi_kierros($Kysely->kierros_id);
 	$KaikkiArvioinnit = $Kysely->getArvioinnitArray();
 	$PublicArvioinnit = array();
@@ -125,8 +123,17 @@ if ( $Pg->page_type == 'toimenpide' && $Kysely = \Ymparisto_arviointi_kysely::ha
 	$ChartVal = intval($AvgArvo*10);
 	$RoundVal = intval($AvgArvo);
 	$ArvoTeksti = \Ymparisto_arviointi_vastaus::arvo2teksti( $RoundVal );
+
+    $kierrokset = \Ymparisto_arviointi_kierros::getKierrokset();
 	?>
 	<div id="arvioinnit">
+        <div id="arvioinnitKierrosValinta">
+            Arviointikierrokset:
+            <? foreach($kierrokset as $kierros) { ?>
+                <a href="?kierros=<?= $kierros->id ?>"><?= $kierros->title1 ?></a>
+                <? if ($kierros !== end($kierrokset)) echo '&middot;' ?>
+            <? } ?>
+        </div>
 		<hr class="clr" />
 		<div id="yhteenveto">
 		<h2 style="margin-top: 0"><?=$Kierros->title3?></h2>

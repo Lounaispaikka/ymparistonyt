@@ -154,16 +154,16 @@ class Ymparisto_arviointi_kysely extends \Lougis\DB_DataObject_Wrapper
     
     }
 
-    public static function hasPublishedArviointi( $PageId ) {
-        //Get the most recent rounds reviews
-	    $most_recent = \Ymparisto_arviointi_kysely::getMostRecent($PageId);
-        devlog($most_recent, "most_recent");
+    public static function getPublishedArviointi( $PageId, $KierrosId ) {
+        // If the ID of the wanted round is given, get that; otherwise get the most recent
+        $KierrosId = $KierrosId ? $KierrosId : \Ymparisto_arviointi_kysely::getMostRecent($PageId);
+
 	    $sql = "SELECT kysely.*, COUNT(vastaus.id) AS vastauksia_yht
 					FROM ymparisto.arviointi_kysely AS kysely
 					JOIN ymparisto.arviointi_kierros AS kierros ON kierros.id = kysely.kierros_id
 					JOIN ymparisto.arviointi_vastaus AS vastaus ON vastaus.kysely_id = kysely.id
 				WHERE kysely.page_id = {$PageId} 
-                AND kysely.kierros_id = {$most_recent}
+                AND kysely.kierros_id = {$KierrosId}
 				AND vastaus.arvio_arvo IS NOT NULL
 				AND kierros.published = TRUE
 				AND kierros.closed = TRUE
@@ -172,8 +172,8 @@ class Ymparisto_arviointi_kysely extends \Lougis\DB_DataObject_Wrapper
 	    $Kysely->query($sql);
 	    $Kysely->fetch();
 	    if ( $Kysely->page_id == $PageId && intval($Kysely->vastauksia_yht) > 0 ) return $Kysely;
-	    
-	    return false;
+	    else
+            return null;
 	    
     }
 

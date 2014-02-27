@@ -63,6 +63,22 @@ class Ymparisto_arviointi_kierros extends \Lougis\DB_DataObject_Wrapper
 	    return $Kyselyt;
 	    
     }
+
+    public function getKierrokset() {
+        $kierrokset = array();
+
+        $sql = "SELECT *
+                FROM ymparisto.arviointi_kierros
+                WHERE ymparisto.arviointi_kierros.closed = TRUE
+                AND ymparisto.arviointi_kierros.published = TRUE";
+
+        $kierros = new \Ymparisto_arviointi_kierros();
+        $kierros->query($sql);
+        while( $kierros->fetch() ) {
+            $kierrokset[] = clone($kierros);
+        }
+        return $kierrokset;
+    }
     
     public function addKysely( $PageId ) {
 	    
