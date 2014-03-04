@@ -8,26 +8,23 @@ $_SESSION['comment_page_id'] = $Pg->id;
 if($Pg->url_name == "indikaattorit") {
 	$_SESSION['comment_part_id'] = $Chart->id;
 }
+else if($Pg->url_name == "kylasuunnitelmat")
+{
+    $_SESSION['comment_part_id'] = isset($_GET['kierros']) ? $_GET['kierros'] : \Ymparisto_arviointi_kysely::getMostRecent($_SESSION['comment_page_id']);
+}
 else {unset($_SESSION['comment_part_id']);}
 
 if ( !isset($_SESSION['rated_comments']) ) $_SESSION['rated_comments'] = array();
 
 $Comments = \Lougis_cms_comment::getAllForPage($Pg->id, $_SESSION['comment_part_id']);
 $Rules = \Lougis_cms_comment::getRules();
-
 ?>
-<div id="comments">
-<a id="newthread" onclick="showNewMsg();">Kirjoita uusi viesti</a>
+<div id="comments" style="margin-bottom: 20px">
+<!--<a id="newthread" onclick="showNewMsg();">Kirjoita uusi viesti</a>-->
 <h2>Keskustele</h2>
-<div id="newcomment" class="msgform">
-	<img id="closenewmsg" src="/img/close.png" alt="" title="Sulje" onclick="hideNewMsg();" class="sulje" />
-	<?=$Rules?>
-	<h2>Uusi viesti</h2>
-	<div id="newcommentform"></div>
-</div>
 <? if ( count($Comments) > 0 ) { ?>
 <ul id="messages">
-<? foreach($Comments as $Cm) { ?>
+<? foreach($Comments as $Cm) {  ?>
 	<li id="cm<?=$Cm->id?>"><a name="cm<?=$Cm->id?>"></a>
 	<?
 	$clicked = in_array($Cm->id, $_SESSION['rated_comments']);
@@ -71,8 +68,16 @@ $Rules = \Lougis_cms_comment::getRules();
 <? } ?> 
 </ul>
 <? } ?>
+<div id="newcomment" style="opacity: 1; margin-left: 40px;" class="msgform"> <!-- style="opacity: 1; font-size: 10px;">-->
+	<!--<img id="closenewmsg" src="/img/close.png" alt="" title="Sulje" onclick="hideNewMsg();" class="sulje" />-->
+	<h2>Uusi viesti</h2>
+	<div id="newcommentform">
+        </div>
+	<?=$Rules?>
+</div>
 </div>
 <?
+
 $Co = new \Lougis\utility\Compiler("comments-ui-extjs", "js");
 $Co->addJs("/js/lougis/lib/comments.ui.extjs.js");
 if ( isset($_REQUEST['debug']) && strpos(PATH_SERVER, 'development') != false ) {

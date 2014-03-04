@@ -76,9 +76,18 @@ class Lougis_cms_comment extends \Lougis\DB_DataObject_Wrapper
     
     public static function getRules() {
 	    
-	    $Rules = "<h2>Ympäristö Nyt verkkokeskustelun säännöt</h2>
+	    $Rules =
+                    "<div id=\"rules\" style=\"font-size: 10px; max-width: 400px; margin-left: 20px; margin-top: 20px;\">" .
+                    "<div id=\"rules_header\" style=\"font-weight: bold; margin-bottom: 5px;\">" .
+                    "Ympäristö Nyt verkkokeskustelun säännöt" .
+                    "</div>" .
+                    "<div id=\"rules_content\">" .
+                        "Verkkokeskusteluun tulevat viestit tarkastetaan. Ylläpito voi lyhentää ja muokata kirjoituksia. Kirjoittaja on juridisessa vastuussa viestinsä sisällöstä. Sisällöltään sopimattomat viestit tai mainokset poistetaan keskusteluista. Muista hyvät tavat, älä huuda! HUUDA tai kiroile." .
+                    "</div>" .
+                    "</div>";
+                    /* "<h2>Ympäristö Nyt verkkokeskustelun säännöt</h2>
 <p>Verkkokeskusteluun tulevat viestit tarkastetaan. Ylläpito voi lyhentää ja muokata kirjoituksia.</p>
-<p>Kirjoittaja on juridisessa vastuussa viestinsä sisällöstä. Sisällöltään sopimattomat viestit tai mainokset poistetaan keskusteluista. Muista hyvät tavat, älä huuda!/HUUDA tai kiroile.</p>";
+<p>Kirjoittaja on juridisessa vastuussa viestinsä sisällöstä. Sisällöltään sopimattomat viestit tai mainokset poistetaan keskusteluista. Muista hyvät tavat, älä huuda!/HUUDA tai kiroile.</p>";*/
 
             return $Rules;
 	    

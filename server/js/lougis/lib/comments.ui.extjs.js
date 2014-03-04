@@ -127,12 +127,6 @@ function createMessageForm( targetId, replyTo ) {
 		},
 		items: [
 			{
-				name: 'comment[nick]',
-				minLength: 2,
-				maxLength: 200,
-				fieldLabel: 'Nimi tai nimimerkki'
-			},
-			{
 				xtype: 'textarea',
 				name: 'comment[msg]',
 				minLength: 2,
@@ -140,6 +134,24 @@ function createMessageForm( targetId, replyTo ) {
 				grow: true
 			},
 			{
+				name: 'comment[nick]',
+				minLength: 2,
+				maxLength: 200,
+                                width: 360,
+				fieldLabel: 'Nimi tai nimimerkki',
+                                labelWidth: 110,
+                                margin: '0 0 0 35'
+			},
+			{
+				name: 'comment[check]',
+				minLength: 2,
+                                width: 50,
+				fieldLabel: 'Mikä on tämän vuoden vuosiluku?',
+                                labelWidth: 220,
+                                width: 320,
+                                margin: '0 0 0 75'
+			}
+			/*{
 				xtype: 'fieldcontainer',
 				layout: 'hbox',
 				fieldLabel: 'Vastaa kysymykseen',
@@ -155,13 +167,13 @@ function createMessageForm( targetId, replyTo ) {
 						margin: '0 0 0 5'
 					}
 				]
-			},				
+			}/*,				
 			{
 				xtype: 'displayfield',
 				fieldStyle: 'color:#888',
 				margin: '0 0 0 125',
 				value: 'roskapostin estomekanismi'
-			}
+			}*/
 		],
 		fbar: [
 			{
@@ -195,25 +207,29 @@ function createMessageForm( targetId, replyTo ) {
 							name: 'comment[title]',
 							minLength: 2,
 							maxLength: 200,
-							fieldLabel: 'Otsikko'
+							fieldLabel: 'Otsikko',
+                                                        margin: '0 0 -10 15'
 						}
 					];
+                                    panel.insert(0, extras[1]);
+                                    panel.insert(0, extras[0]);
 				} else {
 					var extras = [
 						{
 							name: 'comment[title]',
 							minLength: 2,
 							maxLength: 200,
-							fieldLabel: 'Otsikko'
+							fieldLabel: 'Otsikko',
+                                                        margin: '0 0 -10 15'
 						}
 					];
+                                    panel.insert(0, extras[0]);
 				}
-				panel.insert(1, extras);
 			},
 			afterrender: function(panel) {
-				if ( targetId == 'newcommentform' ) {
+				/*if ( targetId == 'newcommentform' ) {
 					hideNewMsg();
-				}
+				}*/
 				
 			}
 		}
