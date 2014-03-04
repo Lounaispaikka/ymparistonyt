@@ -1,8 +1,8 @@
 /* --- Content pages --- */
 /* 
-Värit
+Vï¿½rit
    
-        VIHREÄ: #8fbb42
+        VIHREï¿½: #8fbb42
         Vaalea ORANSSI: #eed333
         Tumma ORANSSI: #efaf0d
         Tumma HARMAA: #818286
@@ -460,17 +460,34 @@ ul#messages li {
 	padding-bottom: 10px;
 	width: 100%;
 	list-style-type: none;
-	border-top: 1px solid #ccc;
+	/*border-top: 1px solid #ccc;*/
 }
+
+ul#messages h5.messageTitle
+{
+    padding: 10px;
+    margin: 0;
+    border-bottom: 1px solid #ccc;
+}
+
 ul#messages li:first-child {
-	border-top: 0;
+	/*border-top: 0;*/
 }
 ul#messages span.author {
 	color: #888;
+        font-style: italic;
+        text-align: right;
+        display: block;
+}
+ul#messages span.author span
+{
+    font-weight: bold;
 }
 ul#messages a.replythread {
-	float: right;
-	cursor: pointer;
+    text-align: right;
+    cursor: pointer;
+    display: block;
+    margin-top: 3px;
 }
 ul#messages img.closereplybox {
 	float: right;
@@ -478,14 +495,20 @@ ul#messages img.closereplybox {
 	cursor: pointer;
 }
 ul#messages div.replybox {
-	margin-left: 50px;
+	margin-left: 200px;
+        margin-top: 20px;
 	padding-left: 20px;
-	border-left: 1px solid #ccc;
+        padding-bottom: 20px;
+	/*border-left: 1px solid #ccc;*/
+	border: 1px solid #ccc;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 }
 ul#messages ul {
 	padding-right: 0;
 	margin: 10px 0 0 50px;
-	border-top: 1px solid #ccc;
+	/*border-top: 1px solid #ccc;*/
 }
 ul#messages div.likebox {
 	float: right;
@@ -723,4 +746,13 @@ span.commentDetails {
 table#asiantuntijat tr, table#asiantuntijat td, table#asiantuntijat td p {
 	padding:1px;
 	margin:1px;
+}
+
+.commentBubble
+{
+    border: 1px solid #ccc;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
 }

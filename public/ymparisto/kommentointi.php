@@ -26,6 +26,7 @@ $Rules = \Lougis_cms_comment::getRules();
 <ul id="messages">
 <? foreach($Comments as $Cm) {  ?>
 	<li id="cm<?=$Cm->id?>"><a name="cm<?=$Cm->id?>"></a>
+            <div class="commentBubble">
 	<?
 	$clicked = in_array($Cm->id, $_SESSION['rated_comments']);
 	?>
@@ -37,15 +38,17 @@ $Rules = \Lougis_cms_comment::getRules();
 			<img src="/img/thumbdown.png" alt="" class="sulje" /> <span><?=$Cm->dislikes?></span>
 		</a>
 	</div>
-	<h5><?=$Cm->title?></h5>
+	<h5 class="messageTitle"><?=$Cm->title?></h5>
 	<p><?=nl2br($Cm->msg)?></p>
-	<span class="author">"<?=$Cm->nick?>" kirjoitti <?=date('d.m.Y H:i:s', strtotime($Cm->date_created))?></span>
+	<span class="author"><span><?=$Cm->nick?></span> kirjoitti <?=date('d.m.Y H:i:s', strtotime($Cm->date_created))?></span>
 	<a class="replythread" onclick="showReplyBox(<?=$Cm->id?>);">Vastaa</a>
-	<div id="replybox<?=$Cm->id?>" class="replybox"></div>
+            </div>
+	<div id="replybox<?=$Cm->id?>" class="closereplybox"></div>
 	<? if ( count($Cm->replys) > 0 ) { ?>
 	<ul class="replys">
 	<? foreach($Cm->replys as $Reply) { ?>
 		<li><a name="cm<?=$Reply->id?>"></a>
+                    <div class="commentBubble">
 			<?
 			$clicked = in_array($Reply->id, $_SESSION['rated_comments']);
 			?>
@@ -57,9 +60,10 @@ $Rules = \Lougis_cms_comment::getRules();
 					<img src="/img/thumbdown.png" alt="" class="sulje" /> <span><?=$Reply->dislikes?></span>
 				</a>
 			</div>
-			<h5><?=$Reply->title?></h5>
+			<h5 class="messageTitle"><?=$Reply->title?></h5>
 			<p><?=nl2br($Reply->msg)?></p>
-			<span class="author">"<?=$Reply->nick?>" kirjoitti <?=date('d.m.Y H:i:s', strtotime($Reply->date_created))?></span>
+			<span class="author"><span><?=$Reply->nick?></span> kirjoitti <?=date('d.m.Y H:i:s', strtotime($Reply->date_created))?></span>
+                    </div>
 		</li>
 	<? } ?>
 	</ul>

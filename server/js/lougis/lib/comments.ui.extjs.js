@@ -53,6 +53,9 @@ function showReplyBox( ParentMsgId ) {
 		},
 		success: function(res) {
 			var replybox = Ext.get('replybox'+ParentMsgId);
+                        var rb = $('#replybox'+ParentMsgId);
+                        rb.removeClass('closereplybox');
+                        rb.addClass('replybox');
 			replybox.update(res.responseText, true, function() {
 				createMessageForm('replyform'+ParentMsgId, ParentMsgId);
 			});
@@ -64,6 +67,9 @@ function showReplyBox( ParentMsgId ) {
 function closeReplyBox( ParentMsgId ) {
 	
 	var replybox = Ext.get('replybox'+ParentMsgId);
+        var rb = $('#replybox'+ParentMsgId);
+        rb.removeClass('replybox');
+        rb.addClass('closereplybox');
 	replybox.update('');
 	
 }
