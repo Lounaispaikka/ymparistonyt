@@ -243,7 +243,7 @@ class CmsPublic extends \Lougis\abstracts\Utility {
 			<li><a href="<?=$leaf->getPageUrl()?>" <?=( ( $leaf->id == $Page->id ) ? ' class="active"' : '' )?>><?=$leaf->title?></a>
 			<?
                         //Ympäristöohjelman sivulla strategiset tavoitteet täytyy olla erillään muista
-                        if($leaf->title == 'Strategiset tavoitteet 2020') { echo '<li>&nbsp;</li>';} ?>
+                        //if($leaf->title == 'Strategiset tavoitteet 2020') { echo '<li>&nbsp;</li>';} ?>
 			<? 
 			if ( isset($leaf->children) && is_array($leaf->children) && count($leaf->children) > 0 
 					&& ( $Page->id == $leaf->id || $Page->hasParentPage($leaf->id) ) ) { 
