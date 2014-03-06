@@ -18,8 +18,11 @@ if(isset($_GET['id'])) {
 
 ?>
 
-<div id="breadcrumb"><? $Cms->outputBreadcrumb(); ?><a href="/fi/sanasto/" style="position:absolute;right:106px; font-size: 12px;">Sanasto</a></div>
-<div id="leftCol" class="col2">	
+<div id="breadcrumb"><? $Cms->outputBreadcrumb();
+     if(isset($_GET['id'])) {
+     $Cms->outputBreadcrumbChartTree(); } ?>
+</div>
+<div id="leftCol" class="col2">
 <? $Cms->outputChartNavigation(); ?>
 </div>
         
