@@ -11,7 +11,9 @@ body, .x-body {
     margin: 0;
     padding: 0;
     text-align: center;
- 
+    background-image: url('https://dl.dropboxusercontent.com/u/4109878/Eurajoen_kylarantaa_VARELY.jpg');
+    background-attachment: fixed;
+    background-size: cover;
 }
 /*img {
 	border: 0;      
@@ -125,6 +127,7 @@ span.clr {
     height: 35px;
     width: 100%;
     text-align: center;
+    background: rgba(0, 0, 0, 0.23);
 }
 #northBar #logo {
 	position: absolute;
@@ -469,7 +472,8 @@ span.clr {
 	width: 100%;
 	font-size: 12px;
 	text-align: center;
-	background: url('/img/tiles/sq_white_40p.png');
+    /*background: url('/img/tiles/sq_white_40p.png');*/
+    background: rgba(0, 0, 0, 0.23);
 }
 #footer #partners {
 	display: block;
