@@ -95,6 +95,18 @@ class CmsPublic extends \Lougis\abstracts\Utility {
 	
 	}
 	
+    public function outputBreadcrumbChartTree() {
+        global $Page;
+
+        $Pg = new \Lougis_chart();
+        $Pg->published = true;
+        $Pg->id = $_GET['id'];
+        $Pg->find();
+        if( $Pg->fetch() ) {
+            echo ' | <a href="'.$Pg->getPageUrl().'">'.trim($Pg->title).'</a>';
+        }
+    }
+
 	public function getCurrentPageParentStack( ) {
 	
 		global $Page;

@@ -1,13 +1,14 @@
 <?php
 
-global $Site, $Page;
+global $Site, $Page, $Cms;
 
 $TopNews = $Site->getNews(6);
+$Pg = $Cms->getPage();
 //$RecentCharts = $Site->getPubInds(4);
 
 require_once(PATH_TEMPLATE.'ymparisto/include_header.php'); 
 ?>
-<div id="breadcrumb"><? $Cms->outputBreadcrumb(); ?><a href="/fi/sanasto/" style="position:absolute;right:106px; font-size: 12px;">Sanasto</a></div>
+<div id="breadcrumb"><? $Cms->outputBreadcrumb(); ?></div>
 <div id="content">
 	<div id="front-content">
 	{PAGE_CONTENT}
@@ -26,6 +27,10 @@ require_once(PATH_TEMPLATE.'ymparisto/include_header.php');
 		<? } ?>
 		</ul>
 		<p><a href="/fi/ajankohtaista/">Lis&auml;&auml; ajankohtaista...</a></p>
+        <?
+        $ColCon = $Pg->getColumnHtml();
+        if ( !empty($ColCon) ) echo $ColCon;
+        ?>
 	</div>
 </div>
 <? require_once(PATH_TEMPLATE.'ymparisto/include_footer.php'); ?>

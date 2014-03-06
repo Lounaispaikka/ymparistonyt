@@ -10,7 +10,7 @@ $ShowNewsId = ( isset($_REQUEST['nid']) ) ? $_REQUEST['nid'] : $AllNews[0]->id;
 
 require_once(PATH_TEMPLATE.'ymparisto/include_header.php'); 
 ?>
-<div id="breadcrumb"><? $Cms->outputBreadcrumb(); ?><a href="/fi/sanasto/" style="position:absolute;right:106px; font-size: 12px;">Sanasto</a></div>
+<div id="breadcrumb"><? $Cms->outputBreadcrumb(); ?></div>
 <div id="content">
 <?
 $Con = $Page->getContentHtml();

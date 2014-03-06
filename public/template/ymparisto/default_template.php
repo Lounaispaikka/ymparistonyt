@@ -33,8 +33,8 @@ if ( $LeftCol && $RightCol ) {
 $TavoitteetPrinted = false;
 ?>
 
+<div id="breadcrumb"><? $Cms->outputBreadcrumb(); ?></div>
 <? if ( $LeftCol ) { ?>
-<div id="breadcrumb"><? $Cms->outputBreadcrumb(); ?><a href="/fi/sanasto/" style="position:absolute;right:106px; font-size: 12px;">Sanasto</a></div>
 <div id="leftCol" class="<?=$Class?>">
 	<? $Cms->outputLeftNavigation($Parent); ?>
 </div>
