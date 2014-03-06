@@ -12,37 +12,25 @@ V�rit
 body, .x-body {
         background-color: #818286; 
 }
+hr {
+    border-top: 1px solid #8FBB42;
+}
 #topNav {
         background-color: #fff;
 }
 #topNav ul li a {
 /*        background-color: #eed333;*/
-  background-color: rgb(255, 255, 255);
-	background-image:linear-gradient(-90deg, rgb(238, 211, 51), rgb(239, 175, 13));
-	background-image:-webkit-gradient(linear, 50% 0%, 50% 100%, from(rgb(238, 211, 51)), to(rgb(239, 175, 13)));
-	background-image:-moz-linear-gradient(-90deg, rgb(238, 211, 51), rgb(239, 175, 13));
-        filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#eed333', endColorstr='#efaf0d'); /* IE6 & IE7 */
-        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#eed333', endColorstr='#efaf0d')"; /* IE8 */
+    background-color: #a9d144;
 }
 #topNav ul li a.active {
 	/*sivustokohtainen*/
 /*   background-color: #efaf0d;*/
-background-color: rgb(255, 255, 255);
-	background-image:linear-gradient(-90deg, rgb(239, 175, 13), rgb(255, 134, 0));
-	background-image:-webkit-gradient(linear, 50% 0%, 50% 100%, from(rgb(239, 175, 13)), to(rgb(255, 134, 0)));
-	background-image:-moz-linear-gradient(-90deg, rgb(239, 175, 13), rgb(255, 134, 0));
-        filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#efaf0d', endColorstr='#ff8600'); /* IE6 & IE7 */
-        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#efaf0d', endColorstr='#ff8600')"; /* IE8 */
+    background-color: #8FBB42;
 }
 #topNav ul li a:hover {
 	/*sivustokohtainen*/
 /*       background-color: #e7e7e8;*/
-       	background-color: rgb(255, 255, 255);
-	background-image:linear-gradient(-90deg, rgb(255, 255, 0), rgb(239, 175, 13) );
-	background-image:-webkit-gradient(linear, 50% 0%, 50% 100%, from(rgb(255, 255, 0)), to(rgb(239, 175, 13)) );
-	background-image:-moz-linear-gradient(-90deg, rgb(255, 255, 0) ,  rgb(239, 175, 13) );
-        filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffff00', endColorstr='#efaf0d'); /* IE6 & IE7 */
-        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffff00', endColorstr='#efaf0d')"; /* IE8 */
+    background-color: #F7A941;
 }
 
 #leftCol ul li a:hover {

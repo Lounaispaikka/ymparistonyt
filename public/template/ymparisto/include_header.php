@@ -102,9 +102,25 @@ require_once(PATH_TEMPLATE.'aluetietopalvelu/aluetietopalvelu_northbar.php');
                                         </a>
                                 </div>
                         </div>
-                        <div id="title_pic">
+                        <div id="title_right">
                                  
-                                 <img src="/img/ymparisto/kaste_web_kaannetty.png" alt="" />
+                            <div id="hakukentta" ><form id="cse_input" action="/fi/haku/" >
+                                    <input type="hidden" name="cx" value="000855416783566672576:b3jhy9nir_w" />
+                                    <input type="hidden" name="ie" value="UTF-8" />
+                                    <input style="" type="text" name="q" size="31" placeholder="Hae..." />
+                                    <input class="submit" type="submit" name="sa" >
+                                </form>
+
+                            </div>
+
+                            <ul>
+                                <li>
+                                    <a href="/fi/sanasto/">Sanasto</a>
+                                </li>
+                                <li>
+                                    <a href="/fi/yhteystiedot/">Yhteystiedot</a>
+                                </li>
+                            </ul>
 			</div>
                 </div>
                 <? if ( $LayoutConf['outputTopNav'] ) { ?>  

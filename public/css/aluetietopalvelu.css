@@ -233,16 +233,56 @@ span.clr {
 /*	width: 100%;*/
 /*	padding: 0px 0px 0px 40px;*/
         height: 135px; 
-        background: url("/img/ymparisto/yn_aurinko_reuna_1000px_ylapalkkiin2.png") no-repeat left;
-        background-color: #8FBB42;
+    /*background: url("/img/ymparisto/yn_aurinko_reuna_1000px_ylapalkkiin2.png") no-repeat left;*/
+    /*background-color: #8FBB42;*/
       
 }
 #title_left{
-        width: 62.4%;
+    width: 642px;
         height: 135px;
         float: left;      
+    background-color: #8FBB42;
+    border-width: 2px 2px 1px 2px;
+    border-color: white;
+    border-style: solid;
 }
-#title_pic{
+#title_right{
+    height: 135px;
+    /*background-color: #F7A941;*/
+    background-color: #FFB64E;
+    border-width: 2px 2px 1px 2px;
+    border-color: white;
+    border-style: solid;
+}
+
+#title_right ul{
+    display:block;
+    text-decoration: none;
+    font-size: 12px;
+    float: right;
+    margin-top: 45px;
+}
+
+#title_right ul li{
+    margin: 8px;
+}
+
+#title_right ul li a{
+    display:block;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#title_right ul li a:hover{
+    text-decoration: underline;
+}
+
+#hakukentta {
+    float:right;
+    margin-right: 8px;
+    margin-top: 15px;
+}
+/*#title_pic{
 	width: 322px;
         float: right;
 	background-color: #fff;
@@ -252,8 +292,8 @@ span.clr {
 #title_pic img{
 	width: 100%;
 	height: 135px;
-/*    background: -moz-linear-gradient(top, #55aaee, #003366);*/
-}
+*//*    background: -moz-linear-gradient(top, #55aaee, #003366);*//*
+}*/
 
 
 #site #header.ymparisto {
@@ -304,7 +344,7 @@ span.clr {
 	display: block;
 	padding: 10px 0px;
 	font-size:13px;
-        letter-spacing: 0.07em;
+    letter-spacing: 0.02em;
         color: #fff;
 	text-align: center;
 	text-decoration: none;
