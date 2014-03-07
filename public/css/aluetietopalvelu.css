@@ -256,11 +256,9 @@ span.clr {
 }
 
 #title_right ul{
-    display:block;
-    text-decoration: none;
     font-size: 12px;
     float: right;
-    margin-top: 45px;
+    margin-top: 30px;
 }
 
 #title_right ul li{
@@ -268,9 +266,7 @@ span.clr {
 }
 
 #title_right ul li a{
-    display:block;
     color: #ffffff;
-    text-decoration: none;
 }
 
 #title_right ul li a:hover{

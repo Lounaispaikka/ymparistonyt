@@ -30,7 +30,7 @@ hr {
 #topNav ul li a:hover {
 	/*sivustokohtainen*/
 /*       background-color: #e7e7e8;*/
-    background-color: #F7A941;
+    background-color: #FFB64E;
 }
 
 #leftCol ul li a:hover {
@@ -337,7 +337,8 @@ div#rightCol.col3 div#tavoitteet {
 	-moz-border-radius: 5px;
 	border-radius: 5px;*/
 	padding: 0 5px 5px 5px;
-        background-color: #e7e7e8;
+    /*background-color: #e7e7e8;*/
+    border-left: 1px solid #ccc;
 }
 div#tavoitteet h2 {
 	margin: 4px 0;
